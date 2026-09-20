@@ -360,9 +360,29 @@ sample_request.json
 Example using the sample request file:
 
 ```powershell
-curl -X POST http://127.0.0.1:5000/predict `
-  -H "Content-Type: application/json" `
-  --data-binary "@sample_request.json"
+curl --location 'http://127.0.0.1:5000/predict' \
+--header 'Content-Type: application/json' \
+--data '{
+  "gender": "Female",
+  "SeniorCitizen": 0,
+  "Partner": "Yes",
+  "Dependents": "No",
+  "tenure": 1,
+  "PhoneService": "No",
+  "MultipleLines": "No phone service",
+  "InternetService": "DSL",
+  "OnlineSecurity": "No",
+  "OnlineBackup": "Yes",
+  "DeviceProtection": "No",
+  "TechSupport": "No",
+  "StreamingTV": "No",
+  "StreamingMovies": "No",
+  "Contract": "Month-to-month",
+  "PaperlessBilling": "Yes",
+  "PaymentMethod": "Electronic check",
+  "MonthlyCharges": 29.85,
+  "TotalCharges": 29.85
+}'
 ```
 
 The API returns HTTP 400 for invalid input and HTTP 503 if the saved model is unavailable.
