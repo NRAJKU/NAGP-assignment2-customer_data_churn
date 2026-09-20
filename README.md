@@ -12,6 +12,23 @@ The solution covers the complete workflow:
 
 **Business Problem → Data Understanding → Data Preparation → EDA → Feature Engineering → Model Development → Evaluation → Interpretation → Model Saving → REST API**
 
+#### Prepare the project
+
+Open a PowerShell terminal in the project root and run:
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If the virtual environment is already created, only activate it:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
 ---
 
 ## 2. Dataset
