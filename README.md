@@ -1,5 +1,7 @@
 # Customer Churn Prediction
 
+github Repo Link: https://github.com/NRAJKU/NAGP-assignment2-customer_data_churn
+
 ## 1. Project Overview
 
 This project builds a machine learning solution to predict whether a telecom customer is likely to churn.
